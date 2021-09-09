@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_top_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_700"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_profile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/fachry_photo" />
+
+
+        <TextView
+            android:id="@+id/name_profile"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Fachry Ikhsal"
+            android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/email_profile"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="fachryikhsal890@gmail.com"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/layout_top_about"
+        android:id="@+id/layout_bottom_about"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_500"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Terimakasih kepada Dicoding sebagai penyedia materi dan Indosat IDcamp sebagai penyedia akses belajar. Beasiswa ini memberikan kesempatan yang besar bagi saya untuk belajar menjadi seorang Android Developer" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="contactMe"
+        android:text="Contact"
+        style="@style/Rounded_Style"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,164 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/card_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@color/gray_300"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/img_detail"
+                android:layout_width="175dp"
+                android:layout_height="325dp"
+                android:scaleType="centerCrop"
+                tools:src="@tools:sample/avatars" />
+
+            <LinearLayout
+                android:id="@+id/layout_maincontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/layout_button"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@id/img_detail"
+                android:layout_toRightOf="@id/img_detail"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_detail_name_title"
+                    style="@style/Detail_Title"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hero_name" />
+
+                <TextView
+                    android:id="@+id/tv_detail_name"
+                    style="@style/content_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/abaddon_the_lord_of_avernus" />
+
+                <TextView
+                    style="@style/Detail_Title"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/power_type" />
+
+                <TextView
+                    style="@style/content_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/strength" />
+
+                <TextView
+                    style="@style/Detail_Title"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/role" />
+
+                <TextView
+                    style="@style/content_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/offlane" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/img_detail"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_set_favorite"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/favorite"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/btn_share"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/share"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/top_layout"
+            android:background="@color/gray_500">
+
+            <LinearLayout
+                android:id="@+id/layout_attribute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Rounded_Style"
+                    android:src="@drawable/strength_attribute_symbol" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Rounded_Style"
+                    android:src="@drawable/agility_attribute_symbol" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="@style/Rounded_Style"
+                    android:src="@drawable/intelligence_attribute_symbol" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_detail_title_hero"
+                style="@style/Detail_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_attribute"
+                android:layout_marginTop="6dp"
+                android:text="Detail" />
+
+            <TextView
+                android:id="@+id/tv_content_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tv_detail_title_hero"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Abaddon, the Lord of Avernus, is a melee strength hero known as one of the most versatile characters in Dota due to his rather low mana dependence, short spell cooldowns and a large number of viable item choices. His ability to help sustain his allies and himself plus his strong tower diving capacity give him solid lane presence. Many of his abilities offer a large sum of utility, which makes him a strong support hero." />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

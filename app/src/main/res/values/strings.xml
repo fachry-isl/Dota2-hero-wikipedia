@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Dota Wikipedia</string>
+    <string name="detail">Detail</string>
+    <string name="hero_name">Hero Name</string>
+    <string name="about">About</string>
+    <string name="abaddon">Abaddon</string>
+    <string name="abaddon_the_lord_of_avernus">Abaddon The Lord of Avernus</string>
+    <string name="power_type">Power Type</string>
+    <string name="strength">Strength</string>
+    <string name="role">Role</string>
+    <string name="offlane">Offlane</string>
+    <string name="favorite">favorite</string>
+    <string name="share">share</string>
+</resources>
