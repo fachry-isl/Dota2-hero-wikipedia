@@ -23,7 +23,8 @@
             android:layout_height="220dp"
             android:layout_marginBottom="4dp"
             android:scaleType="centerCrop"
-            tools:src="@tools:sample/avatars" />
+            tools:src="@tools:sample/avatars"
+            tools:ignore="ContentDescription" />
 
         <TextView
             style="@style/content_1"
@@ -35,18 +36,17 @@
             android:layout_toEndOf="@+id/img_item_photo"
             android:layout_toRightOf="@+id/img_item_photo"
             android:text="@string/hero_name"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:ignore="RtlHardcoded" />
 
         <TextView
             android:id="@+id/tv_item_detail"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@+id/btn_favorite"
             android:layout_below="@id/tv_item_name"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_toEndOf="@id/img_item_photo"
-            android:layout_toRightOf="@id/img_item_photo"
             android:ellipsize="end"
             android:maxLines="5"
             tools:text="@string/detail" />
@@ -57,9 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
             android:layout_toEndOf="@id/img_item_photo"
-            android:layout_toRightOf="@id/img_item_photo"
             style="@style/Widget.AppCompat.Button.Colored"
             android:text="@string/detail"
             android:textSize="12sp"/>

@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailActivity">
+    tools:context=".DetailActivity"
+    android:fillViewport="true">
 
     <RelativeLayout
         android:id="@+id/card_detail"
@@ -21,7 +22,8 @@
                 android:layout_width="175dp"
                 android:layout_height="325dp"
                 android:scaleType="centerCrop"
-                tools:src="@tools:sample/avatars" />
+                tools:src="@tools:sample/avatars"
+                android:contentDescription="@string/heroimage" />
 
             <LinearLayout
                 android:id="@+id/layout_maincontent"
@@ -30,7 +32,6 @@
                 android:layout_above="@id/layout_button"
                 android:layout_alignParentTop="true"
                 android:layout_toEndOf="@id/img_detail"
-                android:layout_toRightOf="@id/img_detail"
                 android:orientation="vertical">
 
                 <TextView
@@ -89,7 +90,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/favorite"
-                    android:textSize="10sp" />
+                    android:textSize="12sp" />
 
                 <Button
                     android:id="@+id/btn_share"
@@ -98,7 +99,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/share"
-                    android:textSize="10sp" />
+                    android:textSize="12sp" />
             </LinearLayout>
 
         </RelativeLayout>
@@ -121,21 +122,24 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     style="@style/Rounded_Style"
-                    android:src="@drawable/strength_attribute_symbol" />
+                    android:src="@drawable/strength_attribute_symbol"
+                    tools:ignore="ContentDescription" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     style="@style/Rounded_Style"
-                    android:src="@drawable/agility_attribute_symbol" />
+                    android:src="@drawable/agility_attribute_symbol"
+                    tools:ignore="ContentDescription" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     style="@style/Rounded_Style"
-                    android:src="@drawable/intelligence_attribute_symbol" />
+                    android:src="@drawable/intelligence_attribute_symbol"
+                    tools:ignore="ContentDescription" />
             </LinearLayout>
 
             <TextView
@@ -145,7 +149,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/layout_attribute"
                 android:layout_marginTop="6dp"
-                android:text="Detail" />
+                android:text="@string/detail" />
 
             <TextView
                 android:id="@+id/tv_content_detail"
@@ -156,7 +160,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="16dp"
-                android:text="Abaddon, the Lord of Avernus, is a melee strength hero known as one of the most versatile characters in Dota due to his rather low mana dependence, short spell cooldowns and a large number of viable item choices. His ability to help sustain his allies and himself plus his strong tower diving capacity give him solid lane presence. Many of his abilities offer a large sum of utility, which makes him a strong support hero." />
+                android:text="@string/abaddon_the_lord_of_avernus_is_a_melee_strength_hero_known_as_one_of_the_most_versatile_characters_in_dota_due_to_his_rather_low_mana_dependence_short_spell_cooldowns_and_a_large_number_of_viable_item_choices_his_ability_to_help_sustain_his_allies_and_himself_plus_his_strong_tower_diving_capacity_give_him_solid_lane_presence_many_of_his_abilities_offer_a_large_sum_of_utility_which_makes_him_a_strong_support_hero" />
         </RelativeLayout>
 
 
