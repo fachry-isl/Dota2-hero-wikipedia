@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
-            android:text="Fachry Ikhsal"
+            android:text="@string/fachry_ikhsal"
             android:textColor="@color/white" />
         <TextView
             android:id="@+id/email_profile"
@@ -37,7 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="fachryikhsal890@gmail.com"
+            android:text="@string/email"
             android:fontFamily="sans-serif-thin"
             android:textColor="@color/white" />
     </LinearLayout>
@@ -57,7 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="16dp"
-            android:text="Terimakasih kepada Dicoding sebagai penyedia materi dan Indosat IDcamp sebagai penyedia akses belajar. Beasiswa ini memberikan kesempatan yang besar bagi saya untuk belajar menjadi seorang Android Developer" />
+            android:text="@string/about_message" />
 
 
     </LinearLayout>
@@ -68,8 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:onClick="contactMe"
-        android:text="Contact"
-        style="@style/Rounded_Style"
-        />
+        android:text="@string/contact"
+        style="@style/Rounded_Style" />
 
 </RelativeLayout>

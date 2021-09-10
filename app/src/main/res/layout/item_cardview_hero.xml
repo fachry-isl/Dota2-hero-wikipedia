@@ -23,27 +23,42 @@
             android:layout_height="220dp"
             android:layout_marginBottom="4dp"
             android:scaleType="centerCrop"
-            tools:src="@tools:sample/avatars"
-            tools:ignore="ContentDescription" />
+            tools:ignore="ContentDescription"
+            tools:src="@tools:sample/avatars" />
 
         <TextView
-            style="@style/content_1"
             android:id="@+id/tv_item_name"
-            android:layout_width="match_parent"
+            style="@style/content_1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_toLeftOf="@+id/btn_favorite"
             android:layout_toEndOf="@+id/img_item_photo"
             android:layout_toRightOf="@+id/img_item_photo"
             android:text="@string/hero_name"
             android:textSize="16sp"
             tools:ignore="RtlHardcoded" />
 
+        <Button
+            android:id="@+id/btn_favorite"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/ic_baseline_favorite_border_24"
+            tools:ignore="ContentDescription" />
+
         <TextView
             android:id="@+id/tv_item_detail"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_above="@+id/btn_detail"
             android:layout_below="@id/tv_item_name"
+            android:layout_alignParentEnd="true"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_toEndOf="@id/img_item_photo"
@@ -53,14 +68,15 @@
 
         <Button
             android:id="@+id/btn_detail"
+            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="16dp"
             android:layout_toEndOf="@id/img_item_photo"
-            style="@style/Widget.AppCompat.Button.Colored"
             android:text="@string/detail"
-            android:textSize="12sp"/>
+            android:textSize="12sp" />
 
     </RelativeLayout>
 

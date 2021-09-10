@@ -13,4 +13,8 @@
     <string name="share">share</string>
     <string name="abaddon_the_lord_of_avernus_is_a_melee_strength_hero_known_as_one_of_the_most_versatile_characters_in_dota_due_to_his_rather_low_mana_dependence_short_spell_cooldowns_and_a_large_number_of_viable_item_choices_his_ability_to_help_sustain_his_allies_and_himself_plus_his_strong_tower_diving_capacity_give_him_solid_lane_presence_many_of_his_abilities_offer_a_large_sum_of_utility_which_makes_him_a_strong_support_hero">Abaddon, the Lord of Avernus, is a melee strength hero known as one of the most versatile characters in Dota due to his rather low mana dependence, short spell cooldowns and a large number of viable item choices. His ability to help sustain his allies and himself plus his strong tower diving capacity give him solid lane presence. Many of his abilities offer a large sum of utility, which makes him a strong support hero.</string>
     <string name="heroimage">heroImage</string>
+    <string name="about_message">Thanks to Dicoding Academy for providing this course. I learn so much thing in this course from basic activity, intent and list to using advance list using Recycler View</string>
+    <string name="contact">Contact</string>
+    <string name="fachry_ikhsal">Fachry Ikhsal</string>
+    <string name="email">fachryikhsal890@gmail.com</string>
 </resources>

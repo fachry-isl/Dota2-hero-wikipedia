@@ -13,7 +13,11 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 
 class CardViewHeroAdapter(private val listHero: ArrayList<DotaHero>) : RecyclerView.Adapter<CardViewHeroAdapter.CardViewHolder>() {
+    //Declaration
     private var onItemClickCallback: OnItemClickCallback? = null
+
+    private var isFavorite: Boolean = false
+
     interface OnItemClickCallback{
         fun onItemClicked(data : DotaHero)
     }
@@ -43,11 +47,23 @@ class CardViewHeroAdapter(private val listHero: ArrayList<DotaHero>) : RecyclerV
             intentDetail.putExtra("nama_hero", hero.name)
             intentDetail.putExtra("info_hero", hero.detail)
             holder.itemView.context.startActivity(intentDetail)
+//            Toast.makeText(holder.itemView.context, "Detail " + listHero.get(holder.adapterPosition).name, Toast.LENGTH_SHORT).show();
+//            onItemClickCallback?.onItemClicked(listHero.get(holder.adapterPosition));
+        }
 
-            //  Toast.makeText(holder.itemView.getContext(), "Detail " + listHero.get(holder.getAdapterPosition()).getName(), Toast.LENGTH_SHORT).show();
-            //  onItemClickCallback.onItemClicked(listHero.get(holder.getAdapterPosition()));
+        holder.btnFavorite.setOnClickListener{
+            isFavorite = if(!isFavorite){
+                holder.btnFavorite.setBackgroundResource(R.drawable.ic_baseline_favorite_24)
+                Toast.makeText(holder.itemView.context, "Kamu memasukkan " + listHero[holder.adapterPosition].name + " sebagai hero favorite", Toast.LENGTH_SHORT).show()
+                true
+
+            }else{
+                holder.btnFavorite.setBackgroundResource(R.drawable.ic_baseline_favorite_border_24)
+                false
+            }
         }
     }
+
     override fun getItemCount(): Int {
        return listHero.size
     }
@@ -57,6 +73,8 @@ class CardViewHeroAdapter(private val listHero: ArrayList<DotaHero>) : RecyclerV
         var tvName: TextView = itemView.findViewById(R.id.tv_item_name)
         var tvDetail: TextView = itemView.findViewById(R.id.tv_item_detail)
         var btnDetail: Button = itemView.findViewById(R.id.btn_detail)
+        var btnFavorite: Button = itemView.findViewById(R.id.btn_favorite)
     }
+
 
 }

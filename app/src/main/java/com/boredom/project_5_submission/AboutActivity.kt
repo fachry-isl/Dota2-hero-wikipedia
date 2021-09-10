@@ -21,8 +21,8 @@ class AboutActivity : AppCompatActivity() {
         return true
     }
 
-    fun contactMe() {
-        val message = "Hi"
+    fun contactMe(view: View) {
+        val message = "Hi "
         val intentContactEmail = Intent(Intent.ACTION_SENDTO)
         intentContactEmail.data = Uri.parse("mailto:")
         intentContactEmail.putExtra(Intent.EXTRA_EMAIL, arrayOf("fachryikhsal890@gmail.com"))
